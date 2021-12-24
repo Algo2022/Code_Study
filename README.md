@@ -1,28 +1,11 @@
 # 👨‍💻 원진, 영석, 민선의 Algorithm Study 👩‍💻
-
 <table>
-
-      
+<tr>
+    <td align="center"><a href="https://github.com/woowonjin"><img src="https://github.com/woowonjin.png" width="100px;" alt=""/><br /><sub><b>Wonjin Woo</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/lysuk96"><img src="https://github.com/lysuk96.png" width="100px;" alt=""/><br /><sub><b>Youngsuk Lee</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/k12ms26"><img src="https://github.com/k12ms26.png" width="100px;" alt=""/><br /><sub><b>Minsun Kim</b></sub></a><br /></td>
+<tr>
 </table>
-
-<div align=center>
-  
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fellynhan%2FChallenge100_Code_Test_Study&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
-[![All Contributors](https://img.shields.io/badge/All_contributors-14-orange.svg?style=flat-square)](#)
-[![Forks Welcome](https://img.shields.io/badge/Fork-welcome!!-brightgreen.svg?style=flat-square)](https://github.com/ellynhan/Challenge100_Code_Test_Study/fork)
-
-</div>
-
-![img](./.Readme/logo.png)
----
-# 💯 알고리즘 및 코딩 테스트 문제 풀이 챌린지 100 📝
-`누구나` 참여 가능한 알고리즘 및 코테 문제 풀이 스터디입니다.
-
-**목표는 100문제 풀이 달성!** 하지만 그 후로도 쭉 스터디를 이어나가셔도 좋습니다.🥰
-
-참여 방법 설명글: <https://waytocse.tistory.com/59>
-<br />
-<br />
 
 ## ✅ 참여 방법
 1. 이 저장소를 `fork` 한다.
@@ -69,22 +52,12 @@ git commit -m "[BOJ] Hello World / 브론즈5 / 1분" -m "https://www.acmicpc.ne
 <br />
 <br />
 
-## ✅ 참여 명단 리스트
-<table>
-<tr>
-    <td align="center"><a href="https://github.com/woowonjin"><img src="https://github.com/woowonjin.png" width="100px;" alt=""/><br /><sub><b>Wonjin Woo</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/lysuk96"><img src="https://github.com/lysuk96.png" width="100px;" alt=""/><br /><sub><b>Youngsuk Lee</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/k12ms26"><img src="https://github.com/k12ms26.png" width="100px;" alt=""/><br /><sub><b>Minsun Kim</b></sub></a><br /></td>
-<tr>
-</table>
-
 <div align=center>
 
 
 <br />
 <br />
 
-## ✅ 참여자 진행도
 
 
 
