@@ -4,7 +4,7 @@
     <td align="center"><a href="https://github.com/woowonjin"><img src="https://github.com/woowonjin.png" width="100px;" alt=""/><br /><sub><b>Wonjin Woo</b></sub></a><br /></td>
     <td align="center"><a href="https://github.com/lysuk96"><img src="https://github.com/lysuk96.png" width="100px;" alt=""/><br /><sub><b>Youngsuk Lee</b></sub></a><br /></td>
     <td align="center"><a href="https://github.com/k12ms26"><img src="https://github.com/k12ms26.png" width="100px;" alt=""/><br /><sub><b>Minsun Kim</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/p51lee"><img src="https://github.com/p51lee.png" width="100px;" alt=""/><br /><sub><b>Kangwook Lee</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/p51lee"><img src="https://github.com/p51lee.png" width="100px;" alt=""/><br /><sub><b>KangUk Lee</b></sub></a><br /></td>
 <tr>
 </table>
 
@@ -47,7 +47,7 @@ git commit -m "[BOJ] Hello World / 브론즈5 / 1분 / #1 " -m "https://www.acmi
 
 ## ✅ PR 규칙
 - PR 제목: 이름 / 주차 / 몇 문제
--  ```jaewon han / 8월 1주차 / 4문제 ```
+-  ```minsun kim / 1월 1주차 / 4문제 ```
 -  comment는 자유
 
 <br />
