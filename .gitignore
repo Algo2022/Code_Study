@@ -1,7 +1,6 @@
 .DS_Store
 .idea
 p51lee/.DS_Store
-# p51lee/*.js
 package-lock.json
 package.json
 node_modules
