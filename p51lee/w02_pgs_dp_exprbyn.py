@@ -6,26 +6,18 @@ def solution(N, number):
     for sol in range(1, 9):
         if number in solution_dict[sol]:
             return sol
-
-        for num in solution_dict[sol]:
-
-            for order, srs in enumerate(series_of_N[:8 - sol]):
-                solution_dict[sol + 1 + order].add(num + srs)
-                solution_dict[sol + 1 + order].add(abs(num - srs))
-                solution_dict[sol + 1 + order].add(num * srs)
-                if num % srs == 0:
-                    solution_dict[sol + 1 + order].add(num / srs)
-                if num != 0 and srs % num == 0:
-                    solution_dict[sol + 1 + order].add(srs / num)
-
-            for prev_sol in range(1, min(sol, 8 - sol) + 1):
-                for eqn_num in solution_dict[prev_sol]:
-                    solution_dict[sol + prev_sol].add(num + eqn_num)
-                    solution_dict[sol + prev_sol].add(abs(num - eqn_num))
-                    solution_dict[sol + prev_sol].add(num * eqn_num)
-                    if eqn_num != 0 and num % eqn_num == 0:
-                        solution_dict[sol + prev_sol].add(num / eqn_num)
-                    if num != 0 and eqn_num % num == 0:
-                        solution_dict[sol + prev_sol].add(eqn_num / num)
+        for op1 in solution_dict[sol]:
+            for order in range(1, min(sol, 8 - sol) + 1):
+                for eqn_num in solution_dict[order]:
+                    solution_dict[sol + order].update(
+                        [op1 + eqn_num, abs(op1 - eqn_num), op1 * eqn_num]
+                    )
+                    # solution_dict[sol + order].add(op1 + eqn_num)
+                    # solution_dict[sol + order].add(abs(op1 - eqn_num))
+                    # solution_dict[sol + order].add(op1 * eqn_num)
+                    if eqn_num != 0 and op1 % eqn_num == 0:
+                        solution_dict[sol + order].add(op1 / eqn_num)
+                    if op1 != 0 and eqn_num % op1 == 0:
+                        solution_dict[sol + order].add(eqn_num / op1)
 
     return -1
