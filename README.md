@@ -46,8 +46,8 @@ git commit -m "[BOJ] Hello World / 브론즈5 / 1분 / #1 " -m "https://www.acmi
 <br />
 
 ## ✅ PR 규칙
-- PR 제목: 이름 / 주차 / 몇 문제
--  ```minsun kim / 1월 1주차 / 4문제 ```
+- PR 제목: 이름 / 주차 / 몇 문제(이슈 5문제 중)
+-  ```minsun kim / Week2 / 4문제 ```
 -  comment는 자유
 
 <br />
