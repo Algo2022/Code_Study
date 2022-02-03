@@ -1,0 +1,1 @@
+solution = lambda n, a1, a2: [str(bin(l1|l2))[2:].zfill(n).replace("0"," ").replace("1","#") for l1, l2 in zip(a1,a2)]
