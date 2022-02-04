@@ -60,12 +60,8 @@ class Board():
             self.board[i] = list("".join(self.board[i]).replace("X", "").rjust(self.rows, "X"))
         
     def solution(self):
-        while True:
-            if self.delete():
-                self.fall()
-                continue
-            else:
-                break
+        while self.delete():
+            self.fall()
         return self.ans
     
 solution = lambda m, n, b: Board(m, n, b).solution()
