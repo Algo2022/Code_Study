@@ -1,7 +1,8 @@
-from sys import stdin
 from collections import defaultdict
+from sys import stdin
 
-class Mem():
+
+class Mem:
     def __init__(self):
         self.mem = {1: [100000, False, 0, 0]}
 
@@ -13,16 +14,18 @@ class Mem():
             length, allocated, left, right = self.mem[curr]
             if not allocated:
                 if not done and length > size:
-                    self.mem[curr] = [size, True, left, curr+size]
-                    self.mem[curr+size] = [length-size, False, curr, right]
-                    if right: self.mem[right][2] = curr+size
+                    self.mem[curr] = [size, True, left, curr + size]
+                    self.mem[curr + size] = [length - size, False, curr, right]
+                    if right:
+                        self.mem[right][2] = curr + size
                     done = True
                     addr = curr
                 elif not done and length == size:
                     self.mem[curr] = [size, True, left, right]
                     done = True
                     addr = curr
-            if not right: break
+            if not right:
+                break
             curr = right
         return addr
 
@@ -34,7 +37,8 @@ class Mem():
                     rlength, _, _, rright = self.mem.pop(right)
                     self.mem[left][0] += length + rlength
                     self.mem[left][3] = rright
-                    if rright: self.mem[rright][2] = left
+                    if rright:
+                        self.mem[rright][2] = left
                 else:
                     self.mem[left][0] += length
                     self.mem[left][3] = right
@@ -42,10 +46,12 @@ class Mem():
             else:
                 if right and self.mem[right][1] == False:
                     rlength, _, _, rright = self.mem.pop(right)
-                    self.mem[addr] = [length+rlength, False, left, rright]
-                    if rright: self.mem[rright][2] = addr
+                    self.mem[addr] = [length + rlength, False, left, rright]
+                    if rright:
+                        self.mem[rright][2] = addr
                 else:
                     self.mem[addr] = [length, False, left, right]
+
 
 inst_list = []
 for _ in range(int(stdin.readline())):
@@ -63,4 +69,3 @@ for inst in inst_list:
     else:
         var_name, malloc_call = inst.split("=")
         env[var_name] = mem.malloc(int(malloc_call[7:-2]))
-
