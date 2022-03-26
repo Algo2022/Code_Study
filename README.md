@@ -58,7 +58,3 @@ git commit -m "[BOJ] Hello World / 브론즈5 / 1분 / #1 " -m "https://www.acmi
 
 <br />
 <br />
-
-
-
-
